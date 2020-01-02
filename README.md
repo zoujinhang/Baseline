@@ -21,7 +21,7 @@
 
 ### python 代码优化--提升计算速度
 
-降低第一版本算法在迭代过程中创建索引数组的次数，通过切片方式进行采样。numpy数组求平均值时利用数组自带的求平均值函数（arr.mean() 要比 numpy.mean(arr) 快），对列表求最小值时利用python自带的函数（min(list) 要比 numpy.min(list) 快）。相同数据相同迭代次数，比zjh_baseline.py提速在160%左右。比R提速70% 。
+降低第一版本算法在迭代过程中创建索引数组的次数，通过切片方式进行采样。numpy数组求平均值时利用数组自带的求平均值函数（arr.mean() 要比 numpy.mean(arr) 快），对列表求最小值时利用python自带的函数（min(list) 要比 numpy.min(list) 快）。相同数据相同迭代次数，比R提速70% 。
 
 
 ### zjh_baseline3.py ：解决时域数据边缘效应对 baseline 算法的影响。
